@@ -47,13 +47,13 @@ Instruct users to type !mafia to play the game. Instruct users to use discord 'n
 
 !hoststop - Rescinds host status and exits hostcommands room. Use when you're done as host
 
-!start - Assigns roles to all mafia players - this command starts the game, **to be used after everyone has typed !mafia**
+!start - Creates a sign-up message that players react to in order to sign up
 
-!night - The command you will use as host every night. This sends requests for night actions and returns the results of the night without giving any information as to roles. **NOTE: This must be used after !start to enter into the first night**
+!assign - Assigns roles to players who reacted to the Mafia Sign Up message **to be used after everyone has reacted to signup message**
 
-!lynch - Type this to lynch a player on behalf of town. The bot will ask for nickname.
+!night - The command you will use as host every night. This sends requests for night actions and returns the results of the night without giving any information as to roles. **NOTE: This must be used after !assign to enter into the first night**
 
-!# - Where # is a number. You will be asked for this command after !start. Usage is self-explanatory in game and sets starting kill power (kills per night) for mafia. !2 is suggested for normal purposes.
+!lynch - Type this to lynch a player on behalf of town (during daytime). The bot will ask for nickname.
 
 !purge - Can be used to clear all text chats involved in mafia (only the rooms you have created for mafia). This is automatically done at the end of every game if there were no errors and a win state was achieved for either mafia or town.
 
@@ -62,9 +62,9 @@ Instruct users to type !mafia to play the game. Instruct users to use discord 'n
 ## General Gameflow
 
 0. (Opt.) Type !end to reset all variables and ensure a clean slate before starting a game.
-1. Instruct all players to type !mafia in any channel to enlist in the mafia game (they will know if they are added to the 'mafiaroom' or 'livemafia')
+1. Type !start and instruct all players to react to Mafia Sign up message to enlist in the mafia game.
 2. Tell everyone to go to bed.
-2. Type !start in hostcomands room to assign all roles. Then type !night to send requests for action
+2. Type !assign in hostcomands room to assign all roles. When done, type !night to send requests for action
 3. Once you have received results from night, wake up everyone and share the news
 4. Type !lynch if a successful lynch occurs, you will be prompted by the bot for a name
 5. Repeat the !night command process and !lynch process until a win is reached.
