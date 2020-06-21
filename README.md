@@ -32,7 +32,7 @@ bottoken
 
 ## Usage & How to Play
 
-Run the MafiaBot script (MafiaV[x].py) - Instructions can be found [here](https://www.pythoncentral.io/execute-python-script-file-shell/). You will also need discord.py to be installed as an 'extension' to your python install for this bot to work. To do this follow the instructions found [here](https://pypi.org/project/discord.py/)
+Run the MafiaBot script (MafiaV[x].py) - Instructions can be found [here](https://www.pythoncentral.io/execute-python-script-file-shell/). You will also need discord.py to be installed as an 'extension' to your python install for this bot to work. To do this follow the instructions found [here](https://pypi.org/project/discord.py/) (you don't need voice support)
 
 Host types !start in the 'hostcommands' room to play the game. A sign-up message is created, users sign up by reacting with a thumbs up. Once all users have signed up, host tells everyone to go to sleep and types !assign followed by !night to start the game. Instruct all users to use discord 'nicknames' on the right-side discord display list when asked for names from the bot. Detailed instructions on night actions and lynching can be found below.
 
